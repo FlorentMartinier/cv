@@ -1,0 +1,22 @@
+<div class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-2 mb-4">
+      Projects
+    </h2>
+  
+    <div *ngFor="let project of projects" class="mb-4">
+  
+      <h3 class="font-semibold">{{ project.name }}</h3>
+      <p class="text-sm text-gray-600 mb-1">
+        {{ project.description }}
+      </p>
+  
+      <a
+        [href]="project.link"
+        target="_blank"
+        class="text-blue-500 text-sm hover:underline"
+      >
+        View project →
+      </a>
+  
+    </div>
+  </div>
