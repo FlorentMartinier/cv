@@ -7,7 +7,8 @@
         "address": "30740 Le Cailar",
         "birthDate": "12 Juin 1993",
         "nationality": "Française",
-        "github": "https://github.com/FlorentMartinier"
+        "github": "https://github.com/FlorentMartinier",
+        "website" : "https://florent-martinier.netlify.app"
     },
     "experiences": [
         {

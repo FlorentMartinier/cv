@@ -15,6 +15,13 @@
         </div>
 
         <div class="space-y-2">
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">Site Web</h2>
+          <a [href]="cv.personalInfo.website" target="_blank" class="text-blue-400 text-sm hover:underline break-all">
+            {{ cv.personalInfo.website }}
+          </a>
+        </div>
+        
+        <div class="space-y-2">
           <h2 class="text-slate-400 uppercase text-xs tracking-wider">GitHub</h2>
           <a [href]="cv.personalInfo.github" target="_blank" class="text-blue-400 text-sm hover:underline break-all">
             {{ cv.personalInfo.github }}

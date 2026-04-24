@@ -15,6 +15,7 @@ export interface CV {
     address: string;
     birthDate: string;
     nationality: string;
+    website: string;
     github: string;
     summary: string;
   }
