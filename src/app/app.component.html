@@ -16,28 +16,28 @@
                 print:min-h-screen">
       <div class="space-y-8">
         <div class="space-y-2">
-          <h2 class="text-slate-400 uppercase text-xs tracking-wider">Contact</h2>
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">{{cv.labels.contact}}</h2>
           <p class="text-sm">{{ cv.personalInfo.email }}</p>
           <p class="text-sm">{{ cv.personalInfo.phone }}</p>
           <p class="text-sm">{{ cv.personalInfo.address }}</p>
         </div>
 
         <div class="space-y-2">
-          <h2 class="text-slate-400 uppercase text-xs tracking-wider">Site Web</h2>
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">{{cv.labels.website}}</h2>
           <a [href]="cv.personalInfo.website" target="_blank" class="text-blue-400 text-sm hover:underline break-all">
             {{ cv.personalInfo.website }}
           </a>
         </div>
 
         <div class="space-y-2">
-          <h2 class="text-slate-400 uppercase text-xs tracking-wider">GitHub</h2>
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">{{cv.labels.github}}</h2>
           <a [href]="cv.personalInfo.github" target="_blank" class="text-blue-400 text-sm hover:underline break-all">
             {{ cv.personalInfo.github }}
           </a>
         </div>
 
         <div class="space-y-2">
-          <h2 class="text-slate-400 uppercase text-xs tracking-wider">Langues</h2>
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">{{cv.labels.languages}}</h2>
           <div *ngFor="let lang of cv.languages">
             <p class="text-sm font-medium">{{ lang.name }}</p>
             <p class="text-xs text-slate-300">{{ lang.level }}</p>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="space-y-3">
-          <h2 class="text-slate-400 uppercase text-xs tracking-wider">Compétences</h2>
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">{{cv.labels.skills}}</h2>
           <div class="flex flex-wrap gap-2">
             <span *ngFor="let skill of cv.skills" class="bg-slate-700 text-xs px-3 py-1 rounded-full">
               {{ skill }}
@@ -79,9 +79,9 @@
         </p>
       </div>
 
-      <app-experience [experiences]="cv.experiences"></app-experience>
-      <app-education [education]="cv.education"></app-education>
-      <app-project [projects]="cv.projects"></app-project>
+      <app-experience [cv]="cv"></app-experience>
+      <app-education [cv]="cv"></app-education>
+      <app-project [cv]="cv"></app-project>
 
     </div>
   </div>

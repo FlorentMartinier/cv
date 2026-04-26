@@ -1,4 +1,15 @@
 {
+    "labels": {
+        "experience": "Expériences professionnelles",
+        "education": "Diplômes",
+        "projects": "Projets personnels",
+        "contact": "Contact",
+        "website": "Site Web",
+        "github": "GitHub",
+        "languages": "Langues",
+        "skills": "Compétences",
+        "seeProject": "Voir le projet"
+    },
     "personalInfo": {
         "title": "Développeur Full Stack Senior {{years}} ans d'expérience, spécialisé en Java, Kotlin et Angular.",
         "firstJobDate": "2016-02-01",

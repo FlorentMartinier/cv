@@ -7,7 +7,7 @@ import { EducationComponent } from "./components/education/education.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { ProjectComponent } from "./components/project/project.component";
 import { CV } from './models/cv.model';
-import { CvService } from './services/cv.services';
+import { TranslationService } from './services/translation.service';
 
 @Component({
   selector: 'app-root',
@@ -28,12 +28,18 @@ export class AppComponent {
 
   cv!: CV;
 
-  constructor(private cvService: CvService) { }
+  constructor(private translationService: TranslationService) { }
 
   ngOnInit(): void {
-    this.cvService.getCV().subscribe(data => {
-      this.cv = data;
+    this.translationService.cvData$.subscribe(data => {
+      if (data) {
+        this.cv = data;
+      }
     });
+  }
+
+  switchLanguage(lang: string) {
+    this.translationService.loadLanguage(lang);
   }
 
   get yearsOfExperience(): number {

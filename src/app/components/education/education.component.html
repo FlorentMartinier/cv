@@ -1,11 +1,11 @@
 <div class="mb-8">
   <h2 class="text-xl font-bold border-b pb-2 mb-6">
-    Diplômes
+    {{cv.labels.education}}
   </h2>
 
   <div class="relative border-l-2 border-gray-200 ml-4 md:ml-6">
 
-    <div *ngFor="let edu of education; let last = last" class="mb-8 ml-10 relative" [class.mb-0]="last">
+    <div *ngFor="let edu of cv.education; let last = last" class="mb-8 ml-10 relative" [class.mb-0]="last">
 
       <div
         class="absolute -left-[60px] -top-[7px] flex items-center justify-center w-10 h-10 bg-white rounded-full border-2 border-gray-200 overflow-hidden shadow-sm">

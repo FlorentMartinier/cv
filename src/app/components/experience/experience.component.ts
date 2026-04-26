@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { Experience } from '../../models/cv.model';
 import { NgForOf, NgIf } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { CV } from '../../models/cv.model';
 
 @Component({
   selector: 'app-experience',
@@ -8,5 +8,5 @@ import { NgForOf, NgIf } from '@angular/common';
   templateUrl: './experience.component.html'
 })
 export class ExperienceComponent {
-  @Input() experiences: Experience[] = [];
+  @Input() cv!: CV;
 }

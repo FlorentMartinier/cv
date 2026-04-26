@@ -1,16 +1,16 @@
 <div class="mb-8">
   <h2 class="text-xl font-bold border-b pb-2 mb-6">
-    Projets personnels
+    {{cv.labels.projects}}
   </h2>
 
   <div class="relative border-l-2 border-gray-200 ml-4 md:ml-6">
 
-    <div *ngFor="let project of projects; let last = last" class="mb-8 ml-10 relative" [class.mb-0]="last">
+    <div *ngFor="let project of cv.projects; let last = last" class="mb-8 ml-10 relative" [class.mb-0]="last">
 
       <div
         class="absolute -left-[60px] -top-[7px] flex items-center justify-center w-10 h-10 bg-white rounded-full border-2 border-gray-200 overflow-hidden shadow-sm">
         <ng-container *ngIf="project.logo; else defaultCircle">
-          <img [src]="project.logo" [alt]="project.company" class="w-full h-full object-cover p-0">
+          <img [src]="project.logo" class="w-full h-full object-cover p-0">
         </ng-container>
 
         <ng-template #defaultCircle>
@@ -32,7 +32,7 @@
         <div class="flex items-center gap-4">
           <a *ngIf="project.link" [href]="project.link" target="_blank"
             class="text-blue-500 text-sm font-medium hover:underline flex items-center gap-1">
-            Voir le projet
+            {{cv.labels.seeProject}}
             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

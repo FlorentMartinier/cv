@@ -1,6 +1,6 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Education } from '../../models/cv.model';
+import { CV } from '../../models/cv.model';
 
 @Component({
   selector: 'app-education',
@@ -8,5 +8,5 @@ import { Education } from '../../models/cv.model';
   templateUrl: './education.component.html'
 })
 export class EducationComponent {
-  @Input() education: Education[] = [];
+  @Input() cv!: CV;
 }

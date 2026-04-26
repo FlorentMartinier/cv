@@ -1,5 +1,6 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { CV } from '../../models/cv.model';
 
 @Component({
   selector: 'app-project',
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
   templateUrl: './project.component.html'
 })
 export class ProjectComponent {
-  @Input() projects: any[] = [];
+  @Input() cv!: CV;
 }

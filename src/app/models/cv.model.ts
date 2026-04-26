@@ -1,4 +1,5 @@
 export interface CV {
+  labels: Labels;
   personalInfo: PersonalInfo;
   experiences: Experience[];
   education: Education[];
@@ -7,6 +8,17 @@ export interface CV {
   skills: string[];
 }
 
+export interface Labels {
+  experience: string;
+  education: string;
+  projects: string;
+  contact: string;
+  website: string;
+  github: string;
+  languages: string;
+  skills: string;
+  seeProject: string;
+}
 export interface PersonalInfo {
   name: string;
   title: string;

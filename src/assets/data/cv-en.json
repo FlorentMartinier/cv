@@ -1,0 +1,209 @@
+{
+    "labels": {
+        "experience": "Professional Experience",
+        "education": "Education",
+        "projects": "Personal Projects",
+        "contact": "Contact",
+        "website": "Website",
+        "github": "GitHub",
+        "languages": "Languages",
+        "skills": "Technical Skills",
+        "seeProject": "View Project"
+    },
+    "personalInfo": {
+        "title": "Senior Full Stack Developer, {{years}} years of experience, specialized in Java, Kotlin, and Angular.",
+        "firstJobDate": "2016-02-01",
+        "name": "Florent Martinier",
+        "email": "florent.martinier@free.fr",
+        "phone": "+33 6 78 00 04 55",
+        "address": "30740 Le Cailar, France",
+        "birthDate": "June 12, 1993",
+        "nationality": "French",
+        "github": "https://github.com/FlorentMartinier",
+        "website": "https://florent-martinier.netlify.app",
+        "photo": "assets/photo.jfif"
+    },
+    "experiences": [
+        {
+            "title": "Java Back-end Developer",
+            "company": "Méritis",
+            "location": "Montpellier, France",
+            "period": "Apr 2025 - Present",
+            "logo": "assets/meritis_logo.jfif",
+            "description": [
+                "Back-end Consultant on assignment at CA-TS.",
+                "Development, optimization, and maintenance of subscription workflows for new retail banking offers."
+            ],
+            "stack": [
+                "Java 8-21",
+                "Spring Boot",
+                "MySQL",
+                "Kafka",
+                "Kubernetes"
+            ]
+        },
+        {
+            "title": "Kotlin / Angular Full Stack Developer",
+            "company": "Sopht",
+            "location": "Lyon (Full remote)",
+            "period": "Nov 2022 - Mar 2025",
+            "logo": "assets/sopht_logo.jfif",
+            "description": [
+                "Software development in the Green Tech sector, focusing on environmental measurement and IT decarbonization.",
+                "Design of connectors for automated data collection via third-party APIs (AWS, ServiceNow, VMWare, etc.).",
+                "Transformation of collected data into environmental footprint metrics.",
+                "Development of a frontend dashboard to visualize and manage CO2eq consumption.",
+                "Deployment of a Kubernetes / Docker infrastructure to automate execution tasks."
+            ],
+            "stack": [
+                "Kotlin",
+                "Spring Boot",
+                "Python",
+                "Angular 17",
+                "PostgreSQL",
+                "MongoDB",
+                "Kubernetes",
+                "Docker",
+                "DuckDB"
+            ]
+        },
+        {
+            "title": "Java / Angular Software Engineer",
+            "company": "Sogelink",
+            "location": "Lyon, France",
+            "period": "Nov 2020 - Nov 2022",
+            "logo": "assets/sogelink_logo.jfif",
+            "description": [
+                "Software development for land surveyors within an R&D department (Geosnap application).",
+                "Contribution to technical specification definitions.",
+                "Development, maintenance, and code reviews.",
+                "Worked within the SAFe (Scaled Agile Framework) methodology."
+            ],
+            "stack": [
+                "Java 11",
+                "Spring Boot",
+                "Angular 8",
+                "PostgreSQL",
+                "ActiveMQ"
+            ]
+        },
+        {
+            "title": "Java / Angular Software Engineer",
+            "company": "Hardis Group",
+            "location": "Lyon, France",
+            "period": "Jan 2020 - Nov 2020",
+            "logo": "assets/hardis_logo.jfif",
+            "description": [
+                "Development of an internal ERP tool for resource management (tracking availability, skills, and certifications).",
+                "Creation of functional and technical specifications from scratch.",
+                "Database schema design.",
+                "Feature development and implementation.",
+                "Technical leadership and mentoring of two apprentices."
+            ],
+            "stack": [
+                "Java 11",
+                "Spring Boot",
+                "Angular 7",
+                "MariaDB"
+            ]
+        },
+        {
+            "title": "GraphTalk Software Engineer",
+            "company": "Hardis Group",
+            "location": "Lyon, France",
+            "period": "Sep 2016 - Jan 2020",
+            "logo": "assets/hardis_logo.jfif",
+            "description": [
+                "Application Maintenance (TMA) for DXC on the GraphTalk A.I.A business solution (Life and Non-Life Insurance sectors).",
+                "Requirement gathering and solution design.",
+                "Corrective and evolutive maintenance.",
+                "Client training on GraphTalk A.I.A technology."
+            ],
+            "stack": [
+                "GraphTalk A.I.A"
+            ]
+        },
+        {
+            "title": "Java Developer Intern",
+            "company": "Iamanys",
+            "location": "Fabrègues, France",
+            "period": "Feb 2016 - Aug 2016",
+            "description": [
+                "Software development in the healthcare sector (wound treatment monitoring).",
+                "Software maintenance and feature updates.",
+                "Test automation."
+            ],
+            "stack": [
+                "Java 8",
+                "GWT",
+                "JXT",
+                "JavaFw",
+                "JUnit"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master's Degree: Dual Competency in Computer Science & Social Sciences",
+            "school": "Université Grenoble Alpes",
+            "location": "Grenoble, France",
+            "period": "2014 - 2016",
+            "logo": "assets/universit_grenoble_alpes_logo.jfif"
+        },
+        {
+            "degree": "Bachelor's Degree in Cognitive Sciences",
+            "school": "Université Lumière Lyon 2",
+            "location": "Lyon, France",
+            "period": "2011 - 2014",
+            "logo": "assets/universite_lyon_2.jfif"
+        },
+        {
+            "degree": "Scientific Baccalaureate (High School Diploma), Honors",
+            "school": "Lycée Georges Clémenceau",
+            "location": "Montpellier, France",
+            "period": "2008 - 2011"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Barrel Manager",
+            "description": "Android application for managing barrel aging processes (Kotlin)",
+            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=en",
+            "logo": "assets/barrel_manager.webp"
+        },
+        {
+            "name": "Pizza Menu",
+            "description": "Website showcasing my homemade pizza creations (Angular, TailwindCSS)",
+            "link": "https://pizzas-de-florent.netlify.app",
+            "logo": "assets/logo_pizza.png"
+        },
+        {
+            "name": "Killer Party",
+            "description": "Android application to automate the 'Killer Party' game (Kotlin)",
+            "link": "killer_party.webp",
+            "logo": "assets/killer_party.webp"
+        }
+    ],
+    "languages": [
+        {
+            "name": "French",
+            "level": "Native speaker"
+        },
+        {
+            "name": "English",
+            "level": "Professional working proficiency (B1 level)"
+        }
+    ],
+    "skills": [
+        "Kotlin",
+        "Java",
+        "Spring",
+        "Angular",
+        "SQL",
+        "HTML / CSS",
+        "TailwindCSS",
+        "Docker",
+        "Kubernetes",
+        "Scrum"
+    ]
+}
